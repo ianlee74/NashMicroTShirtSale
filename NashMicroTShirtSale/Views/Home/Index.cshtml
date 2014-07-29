@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "NashMicro T-Shirt Sale";
+}
+
+<div class="jumbotron">
+    <h1>
+        <img src="~/Images/Nash-Micro-logo-Large.png" width="200" />
+        NashMicro T-Shirt Sale
+    </h1>
+    <p class="lead">        
+        Help us fund our booth at the Nashville Mini Maker Faire! All proceeds of this sale will go towards our
+        soldering workshop at the Faire.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Help us now!</h2>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="NYG49AFZTMR9Y">
+            <table>
+                <tr><td><input type="hidden" name="on0" value="Donation">Donation</td></tr>
+                <tr>
+                    <td>
+                        <select name="os0">
+                            <option value="Shirt Only">Shirt Only [$20.00 USD]</option>
+                            <option value="Shirt + $5 donation">Shirt + $5 donation [$25.00 USD]</option>
+                            <option value="Shirt + $10 donation">Shirt + $10 donation [$30.00 USD]</option>
+                            <option value="Shirt + $25 donation">Shirt + $25 donation [$50.00 USD]</option>
+                            <option value="Shirt + $50 donation">Shirt + $50 donation [$70.00 USD]</option>
+                            <option value="Shirt + $80 donation">Shirt + $80 donation [$100.00 USD]</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td><input type="hidden" name="on1" value="Size">Size</td></tr>
+                <tr>
+                    <td>
+                        <select name="os1">
+                            <option value="X Small">X Small </option>
+                            <option value="Small">Small </option>
+                            <option value="Medium">Medium </option>
+                            <option value="Large">Large </option>
+                            <option value="XL">XL </option>
+                            <option value="2XL">2XL </option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="~/Images/BuyAShirtButton.PNG" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <h3>Q & A</h3>
+        <p><b>Can I buy more than one?</b><br/>Yes! Unfortunately, I only have simple PayPal integration setup.  So, you'll have to submit once for each shirt.  As long as they're purchased during the same day they will be combined for shipping if shipping is required.</p>
+        <p><b>Where can I learn more about the Maker Faire?</b><br/>The Faire is currently seeking more Makers to exhibit, teach workshops, and just volunteer to help heard the cats.  Check it out at <a href="http://nashvillemakerfaire.com">http://nashvillemakerfaire.com</a></p>
+        <p><b>Can you mail it to me?</b><br />Yes! Buy a shirt with a $5 or higher donation attachment and we'll ship it anywhere in the U.S.  Outside the U.S.? Send <a href="mailto:ian@houseoflees.net?subject=NashMicro+T-Shirt+Sale">Ian Lee</a> your address and I'll let you know the price.</p>
+        <p><b>I don't have any money to give.  Is there another way I can help out?</b><br/>Yes! We need lots of help the day of the Faire.  Go <a href="https://plus.google.com/118179179065879787276/posts/9yTPCi8DW7r">here</a> to sign up. Thanks!</p>
+        <p><b>Can I have my company's name added to the shirt?</b><br/>These shirts were provided by our new sponsor, Mercury Intermedia, and due to the time constraints they're already being ordered.  However, we have several other places you can put your logo and help us out including a company branded custom circuit board soldering kit.  Contact <a href="mailto:ian@houseoflees.net?subject=NashMicro+T-Shirt+Sale">Ian Lee</a> ASAP for details about becoming a NashMicro sponsor.</p>
+        <p><b>Why does the PayPal link send money to Ian Lee Consulting?</b><br />Becoming a 503(c) registered non-profit is an expensive process that takes more money to maintain than NashMicro currently raises annually.  So, therefore, it
+        isn't on our priority list.  If you're a large donor who would like to help us make it worthwhile, we'd love to talk to you.  Until then, Ian will have to be our banker.</p>
+    </div>
+    <div class="col-md-4">
+        <p><img src="~/Images/NashMicroT.png" width="800"/></p>
+        <p>Big thanks go to <a href="https://twitter.com/adouglas20">Alan Douglas</a> from <a href="http://mercury.io">Mercury Intermedia</a> for his work on the design!</p>
+    </div>
+</div>
